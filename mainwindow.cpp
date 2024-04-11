@@ -35,6 +35,7 @@ MainWindow::MainWindow(QWidget *parent)
                 setStyleSheet("background-color: red");
             }
         });
+
         connect(newBtn, &QPushButton::pressed, newBtn, &QPushButton::deleteLater);  //уничтожаем по нажатию
         newBtn->show();
         button_maker->setInterval(rand->bounded(100, 1000));
