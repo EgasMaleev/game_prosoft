@@ -29,7 +29,7 @@ MainWindow::MainWindow(QWidget *parent)
             if (newBtn->geometry().x() > width())  //чтобы работало в полноэкранном режиме
                 newBtn->deleteLater();
 
-            if (newBtn->geometry().y() + SizeOfButton > height())  //Проигрыш
+            if (newBtn->geometry().y() + SizeOfButton > height())  //проигрыш
             {
                 setWindowTitle("YOU LOOSE");
                 setStyleSheet("background-color: red");
