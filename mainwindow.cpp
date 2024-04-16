@@ -39,7 +39,6 @@ MainWindow::MainWindow(QWidget *parent)
         connect(newBtn, &QPushButton::pressed, newBtn, &QPushButton::deleteLater);  //уничтожаем по нажатию
         newBtn->show();
         button_maker->setInterval(rand->bounded(100, 1000));
-
     });
     button_maker->start();
     glob_timer->start();
